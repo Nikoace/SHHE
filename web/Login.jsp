@@ -35,7 +35,8 @@
         <div class="option">
             <div class="option-left"><a href="">忘记密码</a></div>
             <div class="option-right">
-                <label class="form-label">现在注册</label>
+                <span class="md-checkbox" checked="checked"></span>
+                <label class="form-label">记住密码</label>
             </div>
         </div>
     </div>

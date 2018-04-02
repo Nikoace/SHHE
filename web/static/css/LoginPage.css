@@ -91,7 +91,7 @@ html {
     position: relative;
 }
 
-.container > .content > .form-group > .form-control {
+.container > .content > .form-group > .form-input {
     z-index: 3;
     position: relative;
     height: 58px;
@@ -100,7 +100,7 @@ html {
     border-bottom: 1px solid #777;
     padding-top: 22px;
     color: #FF4081;
-    font-size: 12px;
+    font-size: 14px;
     background: none;
     box-sizing: border-box;
     outline: none;
@@ -109,28 +109,42 @@ html {
     transition: 0.3s;
 }
 
-.container > .content > .form-group > .form-label {
-    z-index: 1;
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    font-size: 15px;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
+
+.
+.container > .content > .form-group > .radio-label{
+    margin:20px 20px 0 0;display:inline-block
 }
+.container > .content > .form-group > .radio{
+    display:none
+}
+
+.container > .content > .form-group > .radio:checked {
+    background-color: #57ad68;
+    border-radius: 100%;
+    content: "";
+    display: inline-block;
+    height: 12px;
+    margin: 2px;
+    width: 12px
+}
+
+.container > .content > .form-group > .radio:checked {
+    border-radius: 0
+}
+
 
 .container > .content > .form-group > :first-child {
     margin-bottom: 5px;
 }
 
-.container > .content > .form-group > .form-control:focus,
-.container > .content > .form-group > .form-control:valid {
+.container > .content > .form-group > .form-input:focus,
+.container > .content > .form-group > .form-input:valid {
     box-shadow: 0 1px #FF4081;
     border-color: #FF4081;
 }
 
-.container > .content > .form-group > .form-control:focus + .form-label,
-.container > .content > .form-group > .form-control:valid + .form-label {
+.container > .content > .form-group > .form-input:focus + .form-label,
+.container > .content > .form-group > .form-input:valid + .form-label {
     font-size: 12px;
     -ms-transform: translateY(-20px);
     -webkit-transform: translateY(-20px);
@@ -188,49 +202,3 @@ html {
     left: 2px;
 }
 
-.container > .login-button {
-    position: absolute;
-    height: 60px;
-    width: 60px;
-    border: 0px;
-    outline: 0px;
-    background-color: #FF4081;
-    border-radius: 30px;
-    right: -30px;
-    bottom: 91px;
-    box-shadow: 2px 0 0 rgba(0, 0, 0, 0.3) inset;
-}
-
-.container > .login-button > .icon-login {
-    box-sizing: border-box;
-    position: relative;
-    width: 18px;
-    height: 3px;
-    background-color: #fff;
-    transition: 0.3s;
-    display: block;
-    margin: auto;
-}
-
-.container > .login-button > .icon-login::after {
-    content: ' ';
-    box-sizing: border-box;
-    position: absolute;
-    left: 8px;
-    height: 12px;
-    width: 12px;
-    border-top: 3px solid #fff;
-    border-right: 3px solid #fff;
-    transform: rotate(45deg);
-    top: -4px;
-}
-
-.container > .login-button:hover {
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0.3) inset, 0 3px 6px rgba(0, 0, 0, 0.16), 0 5px 11px rgba(0, 0, 0, 0.23)
-}
-
-.container > .login-button:hover > .icon-login {
-    -ms-transform: scale(1.2);
-= webkit-transform: scale(1.2);
-    transform: scale(1.2);
-}
