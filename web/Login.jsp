@@ -11,7 +11,7 @@
         }
     </script>
     <style type="text/css">
-        @import url(/static/LoginPage.css);
+        <!--<%@ include file="/static/css/LoginPage.css"%>-->
     </style>
 </head>
 <body>
@@ -25,18 +25,17 @@
     <h4 class="login-header">用户登录</h4>
     <div class="content">
         <div class="form-group">
-            <input type="text" required class="form-control">
+            <input type="text" name="username" required class="form-control">
             <label class="form-label">用户名</label>
         </div>
         <div class="form-group">
-            <input type="text" required class="form-control">
+            <input type="password" name="password" required class="form-control">
             <label class="form-label">密 码</label>
         </div>
         <div class="option">
             <div class="option-left"><a href="">忘记密码</a></div>
             <div class="option-right">
-                <span class="md-checkbox" checked="checked"></span>
-                <label class="form-label">记住密码</label>
+                <label class="form-label">现在注册</label>
             </div>
         </div>
     </div>
