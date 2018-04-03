@@ -28,11 +28,11 @@
             <input type="text" name="username" placeholder="输入你的用户名" required class="form-input">
             <input type="password" name="password" placeholder="输入密码" required class="form-input">
             <label class="radio-label">
-                <input class="radio" type="radio" required name="demo-radio">
+                <input class="radio" type="radio" name="type" value="1" required checked >
                 <span class="radioInput"></span>一般用户
             </label>
             <label class="radio-label">
-                <input class="radio" type="radio" name="demo-radio">
+                <input class="radio" type="radio" name="type" value="0" >
                 <span class="radioInput"></span>管理员
             </label>
             </br>
@@ -41,7 +41,7 @@
         <div class="option">
         <div class="option-left"><a href="">忘记密码</a></div>
         <div class="option-right">
-            <label class="form-label">现在注册></label>
+            <label class="form-label"><a href="#"> 现在注册></a></label>
         </div>
     </div>
     </div>

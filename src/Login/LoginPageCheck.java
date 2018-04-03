@@ -35,21 +35,22 @@ public class LoginPageCheck implements Action {
     }
 
     // TODO: 2018/4/2 Change Database to getUserName
+    // TODO: 2018/4/3 verify account type 
     public String execute() throws Exception {
         if (username.equals ( "niko" ) && password.equals ( "123" )) {
-            if (type == 0){
-                Map<String,Object> session = ActionContext.getContext ().getSession ();
-                session.put ( "username",username );
-                session.put ( "type",type );
-                return "admin";
-            }else if (type == 1){
-                Map<String,Object> session = ActionContext.getContext ().getSession ();
-                session.put ( "username",username );
-                session.put ( "type",type );
-                return "normal";
-            }else {
-                return Action.ERROR;
-            }
-        }else return Action.ERROR;  
+            if (type == 0) {
+                Map <String, Object> session = ActionContext.getContext ().getSession ();
+                session.put ( "username", username );
+                session.put ( "type", type );
+                return Action.SUCCESS;
+            } else if (type == 1) {
+                Map <String, Object> session = ActionContext.getContext ().getSession ();
+                session.put ( "username", username );
+                session.put ( "type", type );
+                return Action.SUCCESS;
+            } else
+                return Action.LOGIN;
+        }
+        return Action.LOGIN;
     }
 }
