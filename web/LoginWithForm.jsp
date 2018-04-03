@@ -24,21 +24,26 @@
     </div>
     <h4 class="login-header">用户登录</h4>
     <div class="content">
-        <form action="/login/valibate.action" class="form-group">
+        <form action="/login/valibate.action" method="post" class="form-group">
             <input type="text" name="username" placeholder="输入你的用户名" required class="form-input">
             <input type="password" name="password" placeholder="输入密码" required class="form-input">
             <label class="radio-label">
                 <input class="radio" type="radio" required name="demo-radio">
-                <span class="demo--radioInput"></span>一般用户
+                <span class="radioInput"></span>一般用户
             </label>
-            <label class="demo--label">
-                <input class="demo--radio" type="radio" name="demo-radio">
-                <span class="demo--radioInput"></span>管理员
+            <label class="radio-label">
+                <input class="radio" type="radio" name="demo-radio">
+                <span class="radioInput"></span>管理员
             </label>
-            <button type="submit" class="login-button">
-                <span class="icon-login"></span>
-            </button>
+            </br>
+            <div align="center"><input type="submit" value="登录" class="submit-button" /></div>
         </form>
+        <div class="option">
+        <div class="option-left"><a href="">忘记密码</a></div>
+        <div class="option-right">
+            <label class="form-label">现在注册></label>
+        </div>
+    </div>
     </div>
 
 </div>

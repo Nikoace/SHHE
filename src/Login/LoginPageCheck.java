@@ -5,7 +5,7 @@ import com.opensymphony.xwork2.ActionContext;
 
 import java.util.Map;
 
-public class LoginVali implements Action {
+public class LoginPageCheck implements Action {
     private String username;
     private String password;
     private int type;
